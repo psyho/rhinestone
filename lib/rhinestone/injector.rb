@@ -4,7 +4,7 @@ module Rhinestone
     look_in_modules Rhinestone
 
     def cache_backend
-      @cache_backend ||= InMemoryCacheBackend.new
+      @cache_backend ||= FilesystemCacheBackend.new(".cache")
     end
 
     def hostname
