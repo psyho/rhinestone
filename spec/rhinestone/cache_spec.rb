@@ -1,25 +1,7 @@
 require_relative '../spec_helper'
 
 describe Rhinestone::Cache do
-
-  class InMemoryCacheBackend
-    attr_reader :data
-
-    def initialize
-      @data = {}
-    end
-
-    def set(key, value)
-      data[key] = value
-    end
-
-    def get(key)
-      data[key]
-    end
-  end
-
-
-  let(:cache_backend) { InMemoryCacheBackend.new }
+  let(:cache_backend) { Rhinestone::InMemoryCacheBackend.new }
   let(:cache) { Rhinestone::Cache.new(cache_backend) }
 
   let(:response) {

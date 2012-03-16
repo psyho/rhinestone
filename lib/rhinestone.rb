@@ -4,6 +4,7 @@ require 'dependor/shorty'
 module Rhinestone
   autoload :Cache, 'rhinestone/cache'
   autoload :Injector, 'rhinestone/injector'
+  autoload :InMemoryCacheBackend, 'rhinestone/in_memory_cache_backend'
   autoload :HttpClient, 'rhinestone/http_client'
   autoload :Later, 'rhinestone/later'
   autoload :Response, 'rhinestone/response'
