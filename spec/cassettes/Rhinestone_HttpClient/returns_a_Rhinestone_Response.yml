@@ -1,0 +1,166 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://rubygems.org/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 16 Mar 2012 11:39:48 GMT
+      Server:
+      - Apache/2.2.3 (Red Hat) mod_ssl/2.2.3 OpenSSL/0.9.8e-fips-rhel5 Phusion_Passenger/3.0.11
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Etag:
+      - ! '"e727c435d70d9b1b896fc0be277f8855"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Runtime:
+      - '0.850949'
+      Set-Cookie:
+      - _rubygems_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRiIlZDJjYzA3ZWM5NTExNWQ3ZmQ0YjFlYTFmMjYxMTQ4YjBJIhBfY3NyZl90b2tlbgY7AEZJIjF0ekRYTllLY0c1cHhOVmsxcHZ2K3lrNmpyUkVNTGtMRk9NQkpiWHh3dkFjPQY7AEY%3D--5c1881112da15303960e1b8cbef881b12006e326;
+        path=/; HttpOnly
+      Status:
+      - '200'
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '9629'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\">\n    <link rel=\"apple-touch-icon\"
+        href=\"/touch-icon-iphone.png\" />\n    <link rel=\"apple-touch-icon\" sizes=\"72x72\"
+        href=\"/touch-icon-ipad.png\" />\n    <link rel=\"apple-touch-icon\" sizes=\"114x114\"
+        href=\"/touch-icon-iphone4.png\" />\n    <link rel=\"fluid-icon\" href=\"/fluid-icon.png\"/>\n
+        \   <link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"RubyGems.org\"
+        href=\"/opensearch.xml\">\n    <link rel=\"shortcut icon\" href=\"/favicon.ico\"
+        type=\"image/x-icon\">\n    <link href=\"/stylesheets/all.css?1331498529\"
+        media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n    <!--[if IE 7]>\n
+        \     <link href=\"/stylesheets/ie7.css?1331498529\" media=\"screen\" rel=\"stylesheet\"
+        type=\"text/css\" />\n    <![endif]-->\n    \n<link href=\"http://feeds.feedburner.com/gemcutter-latest\"
+        rel=\"alternate\" title=\"RubyGems.org | Latest Gems\" type=\"application/atom+xml\"
+        />\n\n    <meta name=\"csrf-param\" content=\"authenticity_token\"/>\n<meta
+        name=\"csrf-token\" content=\"tzDXNYKcG5pxNVk1pvv+yk6jrREMLkLFOMBJbXxwvAc=\"/>\n
+        \   <title>RubyGems.org | your community gem host</title>\n  </head>\n  <body>\n
+        \   <div class=\"container_12\">\n      <div class=\"prefix_1 grid_4 header\">\n
+        \       <h1><a href=\"http://rubygems.org/\" title=\"Home\">RubyGems.org</a></h1>\n
+        \     </div>\n      <div class=\"grid_6 suffix_1 nav\">\n        <div id=\"nav-cap\">\n
+        \         <div id=\"nav\">\n              <ul id=\"signed_out\">\n                <li
+        id=\"all-gems\"><a href=\"http://rubygems.org/gems\">all gems</a></li>\n\n
+        \               <li id=\"sign-in\">\n                  <a href=\"https://rubygems.org/session/new\">sign
+        in</a>\n                </li>\n\n                <li id=\"sign-up\">\n                  <a
+        href=\"https://rubygems.org/users/new\">sign up</a>\n                </li>\n
+        \             </ul>\n          </div>\n        </div>\n        <form accept-charset=\"UTF-8\"
+        action=\"http://rubygems.org/search\" id=\"main-search\" method=\"get\"><div
+        style=\"margin:0;padding:0;display:inline\"><input name=\"utf8\" type=\"hidden\"
+        value=\"&#x2713;\" /></div>\n          <input id=\"query\" name=\"query\"
+        type=\"text\" value=\"Search gems&hellip;\" />\n          <input id=\"search_submit\"
+        type=\"submit\" value=\"Search\" />\n</form>      </div>\n      <div class=\"prefix_1
+        grid_10 suffix_1 main\">\n        \n\n          <div class=\"fold\">\n              <div
+        class=\"count\">\n    <strong>528,127,613 downloads</strong>\n    of 35,796
+        gems cut since July 2009\n  </div>\n  <div class=\"blurb\">\n    <strong>Welcome
+        to your community RubyGem host.</strong>\n    <br />Find your gems easier,
+        publish them faster, and have fun doing it.\n  </div>\n\n          </div>\n
+        \       <div class=\"info clearfix\">\n          <div class=\"title\">\n            \n
+        \         </div>\n          \n<div class=\"border\">\n  <div class=\"background\">\n
+        \   <div class=\"learn\">\n      <h3>learn</h3>\n      <dl>\n        <dt><a
+        href=\"http://rubygems.org/pages/download\">Install RubyGems 1.8.17</a></dt>\n
+        \       <dd>Ruby's premier packaging system</dd>\n        <dt><a href=\"http://guides.rubygems.org/\">Browse
+        the Guides</a></dt>\n        <dd>In depth explanations, tutorials, and references</dd>\n
+        \       <dt><a href=\"http://guides.rubygems.org/specification-reference/\">Gem
+        Specification</a></dt>\n        <dd>Your gem's interface to the world</dd>\n
+        \     </dl>\n    </div>\n    <div class=\"share\">\n      <h3>share</h3>\n
+        \     <dl>\n        <dt><code>gem update --system</code></dt>\n        <dd>Update
+        to the latest RubyGems version</dd>\n        <dt><code>gem build foo.gemspec</code></dt>\n
+        \       <dd>Build your gem</dd>\n        <dt><code>gem push foo-1.0.0.gem</code></dt>\n
+        \       <dd>Deploy your gem instantly</dd>\n      </dl>\n    </div>\n  </div>\n</div>\n\n<p
+        class=\"pitch\">\n  <strong><a href=\"http://rubygems.org/pages/about\">RubyGems.org</a></strong>
+        is the Ruby community's gem hosting service. <strong><a href=\"http://guides.rubygems.org/make-your-own-gem\"
+        anchor=\"push\">Instantly publish</a></strong> your gems and install them.
+        <strong><a href=\"http://guides.rubygems.org/rubygems-org-api/\">Use the API</a></strong>
+        to interact and find out more information about available gems. <strong><a
+        href=\"http://github.com/rubygems/rubygems.org\">Become a contributor</a></strong>
+        and enhance the site with your own changes.\n</p>\n<div class=\"leaderboards\">\n
+        \ <div class=\"grid_3\" id=\"new_gems\">\n    <strong>New Gems</strong>\n
+        \   <ol>\n        <li>\n          <a href=\"/gems/appyantra_admin\" title=\"Rails
+        3 engine for managing an app's assets, users, pages, blog, SEO and Social
+        Media Integration \">appyantra_admin (0.0.1)</a>\n        </li>\n        <li>\n
+        \         <a href=\"/gems/artieller\" title=\"Converts CSS files from left-to-right
+        to right-to-left\">artieller (0.0.2)</a>\n        </li>\n        <li>\n          <a
+        href=\"/gems/fluent-plugin-file-alternative\" title=\"alternative implementation
+        of out_file, with various configurations\">fluent-plugin-file-alternative
+        (0.1.0)</a>\n        </li>\n        <li>\n          <a href=\"/gems/middleware\"
+        title=\"Generalized implementation of the middleware abstraction for Ruby.\">middleware
+        (0.1.0)</a>\n        </li>\n        <li>\n          <a href=\"/gems/failsafe\"
+        title=\"Tiny little library for silently handling errors so they don't interrupt
+        program flow.\">failsafe (0.1.0)</a>\n        </li>\n    </ol>\n  </div>\n
+        \ <div class=\"grid_3\" id=\"most_downloaded\">\n    <strong>Most Downloaded
+        Today</strong>\n      <ol>\n          <li>\n            <a href=\"/gems/mime-types\"
+        title=\"This library allows for the identification of a file's likely MIME
+        content\ntype. This is release ...\">mime-types-1.17.2 (7,837)</a>\n          </li>\n
+        \         <li>\n            <a href=\"/gems/json\" title=\"This is a JSON
+        implementation as a Ruby extension in C.\">json-1.6.5 (7,532)</a>\n          </li>\n
+        \         <li>\n            <a href=\"/gems/rake\" title=\"Rake is a Make-like
+        program implemented in Ruby. Tasks and dependencies arespecified in standard
+        ...\">rake-0.9.2.2 (7,330)</a>\n          </li>\n          <li>\n            <a
+        href=\"/gems/thor\" title=\"A scripting framework that replaces rake, sake
+        and rubigen\">thor-0.14.6 (6,853)</a>\n          </li>\n          <li>\n            <a
+        href=\"/gems/treetop\" title=\"A Ruby-based text parsing and interpretation
+        DSL\">treetop-1.4.10 (6,584)</a>\n          </li>\n      </ol>\n  </div>\n
+        \ <div class=\"grid_3\" id=\"just_updated\">\n    <strong>Just Updated</strong>\n
+        \   <ol>\n        <li>\n          <a href=\"/gems/dynarex\" title=\"dynarex\">dynarex
+        (1.1.9)</a>\n        </li>\n        <li>\n          <a href=\"/gems/ajax_pagination\"
+        title=\"Loads page content into AJAX sections with AJAX links, handling the
+        details for you, load content...\">ajax_pagination (0.6.2)</a>\n        </li>\n
+        \       <li>\n          <a href=\"/gems/diffbench\" title=\"Diffbench is gem
+        designed to benchmark the performance patches. It can run specified benchmark
+        fi...\">diffbench (0.0.2)</a>\n        </li>\n        <li>\n          <a href=\"/gems/elibri_onix\"
+        title=\"EDItEUR ONIX format subset implementation used in Elibri publication
+        system\">elibri_onix (0.1.12)</a>\n        </li>\n        <li>\n          <a
+        href=\"/gems/anmo\" title=\"This rubygem does not have a description or summary.\">anmo
+        (0.0.3)</a>\n        </li>\n    </ol>\n  </div>\n</div>\n\n        </div>\n
+        \     </div>\n      <div class=\"prefix_1 grid_10 suffix_1 footer\">\n        <ul
+        class=\"major\">\n          <li><a href=\"http://help.rubygems.org\">Help</a></li>\n
+        \         <li><a href=\"http://guides.rubygems.org\">Guides</a></li>\n          <li><a
+        href=\"http://blog.rubygems.org\">Blog</a></li>\n          <li><a href=\"http://guides.rubygems.org/contributing/\">Contribute</a></li>\n
+        \       </ul>\n        <ul class=\"minor\">\n          <li><a href=\"http://m.rubygems.org\">Mobile</a></li>\n
+        \         <li><a href=\"http://status.rubygems.org\">Status</a></li>\n          <li><a
+        href=\"http://uptime.rubygems.org\">Uptime</a></li>\n          <li><a href=\"http://github.com/rubygems/rubygems.org\">Code</a></li>\n
+        \         <li><a href=\"http://groups.google.com/group/gemcutter\">Discuss</a></li>\n
+        \         <li><a href=\"http://rubygems.org/stats\">Stats</a></li>\n          <li><a
+        href=\"http://rubygems.org/pages/about\">About</a></li>\n        </ul>\n        <ul
+        class=\"sponsors\">\n          <li><a href=\"http://rubycentral.org\" id=\"rubycentral\"
+        title=\"Hosted by Ruby Central\">hosted by <img alt=\"Rubycentral\" src=\"/images/rubycentral.png?1331498529\"
+        /></a></li>\n          <li><a href=\"http://thoughtbot.com\" id=\"thoughtbot\"
+        title=\"Design by Thoughtbot\">design by <img alt=\"Thoughtbot\" src=\"/images/thoughtbot.png?1331498529\"
+        /></a></li>\n          <li><a href=\"http://dnsimple.com\" id=\"dnsimple\"
+        title=\"Resolved with DNSimple\">resolved with <img alt=\"Dnsimple\" src=\"/images/dnsimple.png?1331498529\"
+        /></a></li>\n          <li><a href=\"http://newrelic.com\" id=\"newrelic\"
+        title=\"Optimized by NewRelic\">optimized by <img alt=\"Newrelic\" src=\"/images/newrelic.png?1331498529\"
+        /></a></li>\n          <li><a href=\"http://gaug.es\" id=\"gauges\" title=\"Tracking
+        by Gauges\">tracking by <img alt=\"Gauges\" src=\"/images/gauges.png?1331498529\"
+        /></a></li>\n        </ul>\n      </div>\n    </div>\n    <script src=\"/javascripts/all.js?1331498529\"
+        type=\"text/javascript\"></script>\n    \n    <script type=\"text/javascript\">\n
+        \     var _gauges = _gauges || [];\n      (function() {\n        var t   =
+        document.createElement('script');\n        t.type  = 'text/javascript';\n
+        \       t.async = true;\n        t.id    = 'gauges-tracker';\n        t.setAttribute('data-site-id',
+        '4eab0ac8613f5d1583000005');\n        t.src = '//secure.gaug.es/track.js';\n
+        \       var s = document.getElementsByTagName('script')[0];\n        s.parentNode.insertBefore(t,
+        s);\n      })();\n    </script>\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Fri, 16 Mar 2012 11:39:49 GMT
+recorded_with: VCR 2.0.0

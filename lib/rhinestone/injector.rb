@@ -6,5 +6,9 @@ module Rhinestone
     def cache_backend
       @cache_backend ||= InMemoryCacheBackend.new
     end
+
+    def hostname
+      "rubygems.org"
+    end
   end
 end

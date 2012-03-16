@@ -1,6 +1,6 @@
 require_relative '../spec_helper'
 
-describe "Rhinestone integration" do
+describe "Rhinestone integration", :vcr do
   it "proxies requests to rubygems.org" do
     response = nil
 
