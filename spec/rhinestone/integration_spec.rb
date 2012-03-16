@@ -13,4 +13,17 @@ describe "Rhinestone integration", :vcr do
     response.headers["Content-Type"].should_not be_nil
     response.body.should include("RubyGems.org")
   end
+
+  it "caches the requests" do
+    server = Rhinestone.server
+    response_one = response_two = nil
+
+    EM.synchrony do
+      response_one = server.get("/")
+      response_two = server.get("/")
+      EM.stop
+    end
+
+    response_one.should == response_two
+  end
 end

@@ -10,5 +10,9 @@ module Rhinestone
     def hostname
       "rubygems.org"
     end
+
+    def important_headers
+      %w{Content-Type Cache-Control ETag Set-Cookie}
+    end
   end
 end
