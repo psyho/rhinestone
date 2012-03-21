@@ -58,3 +58,11 @@ Assuming you have Rhinestone running somewhere in your local network, add this t
 This will speed up `bundle install` about 5-6x times, and even more if you remove the rubygems part completely (but I don't recommend that).
 Note that the Rhinestone line is beneath rubygems one.
 Otherwise bundler would download most of the gems directly from Rubygems and not from the proxy.
+
+## Author
+
+Adam Pohorecki
+
+## License
+
+MIT, see the MIT-LICENSE file.
