@@ -6,23 +6,19 @@ It has bothered me, so I wrote Rhinestone: a simple proxy caches both the gems a
 It updates the cache *after* returning the response, so you get data that might be a little stale, but you get it very quickly.
 You should deploy it somewhere in your local network (so that more people use the same cache).
 
-# Installation
+## Installation
 
 Just install it from RubyGems:
 
     gem install rhinestone
 
-# Running
+## Running
 
 It's as simple as running:
 
     rhinestone
 
-Rhinestone uses Goliath underneath, so there are more switches you can use:
-
-    $ rhinestone --help
-
-    Usage: <server> [options]
+Rhinestone uses Goliath underneath, so there are some switches you can use:
 
     Server options:
         -e, --environment NAME           Set the execution environment (prod, dev or test) (default: development)
@@ -47,3 +43,14 @@ Rhinestone uses Goliath underneath, so there are more switches you can use:
     Common options:
         -v, --verbose                    Enable verbose logging (default: false)
         -h, --help                       Display help message
+
+    Rhinestone-specific options:
+        -C, --cache-path DIRECTORY       The directory where cache files will be stored
+
+
+## Usage
+
+Assuming you have Rhinestone running somewhere in your local network, add this to your Gemfile:
+
+    source :rubygems
+    source "http://rhinestone.local" # the address of rhinestone
