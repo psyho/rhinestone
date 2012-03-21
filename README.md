@@ -12,6 +12,23 @@ Just install it from RubyGems:
 
     gem install rhinestone
 
+Below is the upstart script I used to make it run on Ubuntu:
+
+```
+# File: /etc/init/rhinestone.conf
+
+# Rhinestone - a RubyGems.org proxy
+
+description "rhinestone proxy server"
+
+start on runlevel [23]
+stop on shutdown
+
+exec sudo rhinestone -p 80 -e prod -l /var/log/rhinestone.log -P /var/run/rhinestone.pid -C /var/rhinestone/cache
+
+respawn
+```
+
 ## Running
 
 It's as simple as running:
