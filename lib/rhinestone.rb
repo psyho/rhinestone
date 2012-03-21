@@ -7,6 +7,7 @@ require 'yaml'
 module Rhinestone
   autoload :App,                    'rhinestone/app'
   autoload :Cache,                  'rhinestone/cache'
+  autoload :Config,                 'rhinestone/config'
   autoload :FilesystemCacheBackend, 'rhinestone/filesystem_cache_backend'
   autoload :HeaderFilter,           'rhinestone/header_filter'
   autoload :Injector,               'rhinestone/injector'
@@ -18,7 +19,11 @@ module Rhinestone
   autoload :VERSION,                'rhinestone/version'
 
   def self.server
-    Injector.new.server
+    Injector.new(config).server
+  end
+
+  def self.config
+    Rhinestone::Config.new(ARGV).to_h
   end
 
   def self.run!
