@@ -1,3 +1,49 @@
 # Rhinestone
 
-A proxy to rubygems.org, which caches the rubygems responses and returns the latest cached response to the client, so that most of the time having it placed on the local network really speeds up doing "gem/bundle install".
+Has it ever bothered you how long `bundle install` command takes to run?
+
+It has bothered me, so I wrote Rhinestone: a simple proxy caches both the gems and the gem metadata.
+It updates the cache *after* returning the response, so you get data that might be a little stale, but you get it very quickly.
+You should deploy it somewhere in your local network (so that more people use the same cache).
+
+# Installation
+
+Just install it from RubyGems:
+
+    gem install rhinestone
+
+# Running
+
+It's as simple as running:
+
+    rhinestone
+
+Rhinestone uses Goliath underneath, so there are more switches you can use:
+
+    $ rhinestone --help
+
+    Usage: <server> [options]
+
+    Server options:
+        -e, --environment NAME           Set the execution environment (prod, dev or test) (default: development)
+        -a, --address HOST               Bind to HOST address (default: 0.0.0.0)
+        -p, --port PORT                  Use PORT (default: 9000)
+        -S, --socket FILE                Bind to unix domain socket
+
+    Daemon options:
+        -u, --user USER                  Run as specified user
+        -c, --config FILE                Config file (default: ./config/<server>.rb)
+        -d, --daemonize                  Run daemonized in the background (default: false)
+        -l, --log FILE                   Log to file (default: off)
+        -s, --stdout                     Log to stdout (default: false)
+        -P, --pid FILE                   Pid file (default: off)
+
+    SSL options:
+            --ssl                        Enables SSL (default: off)
+            --ssl-key FILE               Path to private key
+            --ssl-cert FILE              Path to certificate
+            --ssl-verify                 Enables SSL certificate verification
+
+    Common options:
+        -v, --verbose                    Enable verbose logging (default: false)
+        -h, --help                       Display help message
