@@ -67,7 +67,7 @@ Rhinestone uses Goliath underneath, so there are some switches you can use:
 
 ## Usage
 
-Assuming you have Rhinestone running somewhere in your local network, add this to your Gemfile:
+Assuming you have Rhinestone running somewhere in your local network, add this to your `Gemfile`:
 
     source :rubygems
     source "http://rhinestone.local" # the address of rhinestone
@@ -75,6 +75,12 @@ Assuming you have Rhinestone running somewhere in your local network, add this t
 This will speed up `bundle install` about 5-6x times, and even more if you remove the rubygems part completely (but I don't recommend that).
 Note that the Rhinestone line is beneath rubygems one.
 Otherwise bundler would download most of the gems directly from Rubygems and not from the proxy.
+
+You can also add it to your `.gemrc` file:
+
+    gem: --no-ri --no-rdoc
+    :sources:
+    - http://rhinestone.local
 
 ## Author
 
