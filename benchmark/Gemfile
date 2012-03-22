@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-source "http://127.0.0.1:1234"
+source "http://192.168.20.205"
 
 gem "rails"
 gem "rspec-rails"

@@ -1,4 +1,4 @@
-source "http://192.168.20.205"
+source :rubygems
 
 gem "rails"
 gem "rspec-rails"

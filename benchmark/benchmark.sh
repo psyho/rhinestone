@@ -2,7 +2,7 @@
 
 echo "without cache"
 rvm 1.9.3 gemset create rhinestone-benchmark
-time rvm 1.9.3@rhinestone-benchmark exec bundle install
+time rvm 1.9.3@rhinestone-benchmark exec bundle install --gemfile=Gemfile.rgems
 rvm --force gemset delete rhinestone-benchmark
 
 echo "with cache"
